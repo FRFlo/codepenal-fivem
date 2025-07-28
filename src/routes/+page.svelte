@@ -6,6 +6,8 @@ import TemplateManager from "$lib/components/TemplateManager.svelte";
 import { calculateResults, loadOffenses } from "$lib/offenses";
 import type { CalculationResult, Offense, SelectedOffense } from "$lib/types";
 
+const ACTIVE_TAB_STORAGE_KEY = "lspd_active_tab";
+
 let offenses = $state<Offense[]>([]);
 let selectedOffenses = $state<SelectedOffense[]>([]);
 let searchTerm = $state("");
@@ -17,7 +19,34 @@ let calculationResult = $derived(
 	selectedOffenses.length > 0 ? calculateResults(selectedOffenses) : null,
 );
 
+/**
+ * Charge l'onglet actif depuis le localStorage
+ */
+function loadActiveTab(): "calculator" | "templates" {
+	try {
+		const stored = localStorage.getItem(ACTIVE_TAB_STORAGE_KEY);
+		return stored === "templates" ? "templates" : "calculator";
+	} catch (error) {
+		console.error("Erreur lors du chargement de l'onglet actif:", error);
+		return "calculator";
+	}
+}
+
+/**
+ * Sauvegarde l'onglet actif dans le localStorage
+ */
+function saveActiveTab(tab: "calculator" | "templates"): void {
+	try {
+		localStorage.setItem(ACTIVE_TAB_STORAGE_KEY, tab);
+	} catch (error) {
+		console.error("Erreur lors de la sauvegarde de l'onglet actif:", error);
+	}
+}
+
 onMount(async () => {
+	// Charger l'onglet actif depuis le localStorage
+	activeTab = loadActiveTab();
+
 	try {
 		offenses = await loadOffenses();
 	} catch (err) {
@@ -35,10 +64,12 @@ function clearAll() {
 function handleTemplateLoad(offenses: SelectedOffense[]) {
 	selectedOffenses = offenses;
 	activeTab = "calculator"; // Retourner à l'onglet calculateur
+	saveActiveTab(activeTab);
 }
 
 function setActiveTab(tab: "calculator" | "templates") {
 	activeTab = tab;
+	saveActiveTab(tab);
 }
 </script>
 
