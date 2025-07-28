@@ -2,22 +2,26 @@
     import type { Offense, SelectedOffense } from '../types';
     import { formatCurrency } from '../offenses';
 
-    export let offenses: Offense[] = [];
-    export let selectedOffenses: SelectedOffense[] = [];
-    export let searchTerm = '';
+    let { offenses, selectedOffenses = $bindable(), searchTerm = $bindable() }: {
+        offenses: Offense[];
+        selectedOffenses: SelectedOffense[];
+        searchTerm: string;
+    } = $props();
 
-    let selectedCategory = '';
+    let selectedCategory = $state('');
 
-    $: filteredOffenses = offenses.filter(offense => {
-        const matchesSearch = offense.offense.toLowerCase().includes(searchTerm.toLowerCase());
-        const matchesCategory = !selectedCategory || offense.category_name === selectedCategory;
-        return matchesSearch && matchesCategory;
-    });
+    let filteredOffenses = $derived(
+        offenses.filter((offense: Offense) => {
+            const matchesSearch = offense.offense.toLowerCase().includes(searchTerm.toLowerCase());
+            const matchesCategory = !selectedCategory || offense.category_name === selectedCategory;
+            return matchesSearch && matchesCategory;
+        })
+    );
 
-    $: categories = [...new Set(offenses.map(o => o.category_name))];
+    let categories = $derived([...new Set(offenses.map((o: Offense) => o.category_name))]);
 
     function addOffense(offense: Offense) {
-        const existing = selectedOffenses.find(o => o.offense === offense.offense);
+        const existing = selectedOffenses.find((o: SelectedOffense) => o.offense === offense.offense);
         if (existing) {
             existing.quantity += 1;
             selectedOffenses = [...selectedOffenses];
@@ -27,7 +31,7 @@
     }
 
     function removeOffense(offense: SelectedOffense) {
-        selectedOffenses = selectedOffenses.filter(o => o.offense !== offense.offense);
+        selectedOffenses = selectedOffenses.filter((o: SelectedOffense) => o.offense !== offense.offense);
     }
 
     function updateQuantity(offense: SelectedOffense, newQuantity: number) {
@@ -89,7 +93,7 @@
                         </div>
                     </div>
                     <button
-                        on:click={() => addOffense(offense)}
+                        onclick={() => addOffense(offense)}
                         class="ml-4 px-3 py-1 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                         Ajouter
@@ -118,20 +122,20 @@
                         </div>
                         <div class="flex items-center space-x-2">
                             <button
-                                on:click={() => updateQuantity(offense, offense.quantity - 1)}
+                                onclick={() => updateQuantity(offense, offense.quantity - 1)}
                                 class="w-8 h-8 flex items-center justify-center bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300"
                             >
                                 -
                             </button>
                             <span class="w-8 text-center font-medium">{offense.quantity}</span>
                             <button
-                                on:click={() => updateQuantity(offense, offense.quantity + 1)}
+                                onclick={() => updateQuantity(offense, offense.quantity + 1)}
                                 class="w-8 h-8 flex items-center justify-center bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300"
                             >
                                 +
                             </button>
                             <button
-                                on:click={() => removeOffense(offense)}
+                                onclick={() => removeOffense(offense)}
                                 class="ml-2 px-2 py-1 text-red-600 hover:text-red-800"
                             >
                                 Supprimer

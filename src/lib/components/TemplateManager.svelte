@@ -1,34 +1,36 @@
 <script lang="ts">
-    import { createEventDispatcher, onMount } from 'svelte';
+    import { onMount } from 'svelte';
     import type { Template, SelectedOffense } from '../types';
     import { loadTemplates, createTemplate, deleteTemplate, markTemplateAsUsed, formatDate, exportTemplateToUrl, importTemplateFromUrl, clearTemplateFromUrl, hasTemplateInUrl } from '../templates';
     import { formatCurrency } from '../offenses';
 
-    export let selectedOffenses: SelectedOffense[] = [];
-
-    const dispatch = createEventDispatcher<{
-        loadTemplate: { offenses: SelectedOffense[] };
+    let { selectedOffenses, onLoadTemplate } = $props<{
+        selectedOffenses: SelectedOffense[];
+        onLoadTemplate: (offenses: SelectedOffense[]) => void;
     }>();
 
-    let templates: Template[] = [];
-    let showSaveDialog = false;
-    let templateName = '';
-    let templateDescription = '';
-    let showDeleteConfirm = false;
-    let templateToDelete: Template | null = null;
-    let showShareDialog = false;
-    let templateToShare: Template | null = null;
-    let shareUrl = '';
-    let showImportDialog = false;
-    let importData: { name: string; description: string; offenses: SelectedOffense[] } | null = null;
-    let showCopyNotification = false;
+    let templates = $state<Template[]>([]);
+    let showSaveDialog = $state(false);
+    let templateName = $state('');
+    let templateDescription = $state('');
+    let showDeleteConfirm = $state(false);
+    let templateToDelete = $state<Template | null>(null);
+    let showShareDialog = $state(false);
+    let templateToShare = $state<Template | null>(null);
+    let shareUrl = $state('');
+    let showImportDialog = $state(false);
+    let importData = $state<{ name: string; description: string; offenses: SelectedOffense[] } | null>(null);
+    let showCopyNotification = $state(false);
 
     // Charger les templates au montage
-    $: {
+    let templatesLoaded = $derived(() => {
         templates = loadTemplates();
-    }
+    });
 
     onMount(() => {
+        // Charger les templates initialement
+        templates = loadTemplates();
+        
         // Vérifier s'il y a un template à importer dans l'URL
         if (hasTemplateInUrl()) {
             const imported = importTemplateFromUrl();
@@ -59,7 +61,7 @@
     function loadTemplate(template: Template) {
         markTemplateAsUsed(template.id);
         templates = loadTemplates();
-        dispatch('loadTemplate', { offenses: template.offenses });
+        onLoadTemplate(template.offenses);
     }
 
     function confirmDelete(template: Template) {
@@ -119,7 +121,7 @@
     <div class="flex justify-between items-center">
         <h3 class="text-lg font-medium text-gray-900">Templates sauvegardés</h3>
         <button
-            on:click={openSaveDialog}
+            onclick={openSaveDialog}
             disabled={selectedOffenses.length === 0}
             class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 disabled:opacity-50 disabled:cursor-not-allowed"
         >
@@ -161,19 +163,19 @@
                             </div>
                             <div class="flex items-center space-x-2 ml-4">
                                 <button
-                                    on:click={() => loadTemplate(template)}
+                                    onclick={() => loadTemplate(template)}
                                     class="px-3 py-1 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 >
                                     Charger
                                 </button>
                                 <button
-                                    on:click={() => openShareDialog(template)}
+                                    onclick={() => openShareDialog(template)}
                                     class="px-3 py-1 bg-purple-600 text-white text-sm rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
                                 >
                                     Partager
                                 </button>
                                 <button
-                                    on:click={() => confirmDelete(template)}
+                                    onclick={() => confirmDelete(template)}
                                     class="px-3 py-1 bg-red-600 text-white text-sm rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
                                 >
                                     Supprimer
@@ -224,13 +226,13 @@
                 </div>
                 <div class="flex justify-end space-x-3 mt-6">
                     <button
-                        on:click={() => showSaveDialog = false}
+                        onclick={() => showSaveDialog = false}
                         class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
                     >
                         Annuler
                     </button>
                     <button
-                        on:click={saveTemplate}
+                        onclick={saveTemplate}
                         disabled={!templateName.trim()}
                         class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
@@ -261,7 +263,7 @@
                                 class="flex-1 px-3 py-2 border border-gray-300 rounded-l-md bg-gray-50 text-gray-600"
                             />
                             <button
-                                on:click={copyShareUrl}
+                                onclick={copyShareUrl}
                                 class="px-4 py-2 bg-purple-600 text-white rounded-r-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
                             >
                                 Copier
@@ -274,7 +276,7 @@
                 </div>
                 <div class="flex justify-end mt-6">
                     <button
-                        on:click={() => showShareDialog = false}
+                        onclick={() => showShareDialog = false}
                         class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
                     >
                         Fermer
@@ -319,13 +321,13 @@
                 </div>
                 <div class="flex justify-end space-x-3 mt-6">
                     <button
-                        on:click={cancelImport}
+                        onclick={cancelImport}
                         class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
                     >
                         Annuler
                     </button>
                     <button
-                        on:click={confirmImport}
+                        onclick={confirmImport}
                         class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                         Importer
@@ -347,13 +349,13 @@
                 </p>
                 <div class="flex justify-end space-x-3">
                     <button
-                        on:click={() => showDeleteConfirm = false}
+                        onclick={() => showDeleteConfirm = false}
                         class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
                     >
                         Annuler
                     </button>
                     <button
-                        on:click={deleteTemplateConfirmed}
+                        onclick={deleteTemplateConfirmed}
                         class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
                     >
                         Supprimer

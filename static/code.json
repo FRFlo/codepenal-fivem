@@ -1,1816 +1,1475 @@
 [
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Appel inutile aux services publics",
-        "fine": 500,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Conduite dangereuse",
-        "fine": 800,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [
-            "Retrait du permis de la catégorie du véhicule"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Conduite sans permis",
-        "fine": 1500,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [
-            "Saisie temporaire du véhicule (fourrière)"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Excès de vitesse",
-        "fine": 800,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Injure",
-        "fine": 1000,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Stationnement gênant/interdit",
-        "fine": 800,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [
-            "Saisie temporaire du véhicule (fourrière)"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Véhicule non en état",
-        "fine": 500,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [
-            "Saisie temporaire du véhicule (fourrière)"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Dissimulation du visage",
-        "fine": 1500,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [
-            "Retrait de l'élément dissimulant par l'individu"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Holster visible",
-        "fine": 600,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [
-            "Retrait du holster par l'individu"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Ivresse sur la voie publique",
-        "fine": 500,
-        "duration_minutes": 5,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Dégrisement"
-        ],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 1,
-        "category_name": "Contravention",
-        "offense": "Utilisation abusive de l'avertisseur sonore",
-        "fine": 500,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [
-            "Saisie temporaire du véhicule (fourrière)"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Braconnage / Chasse / Pêche illégale",
-        "fine": 2500,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Braquage LTD",
-        "fine": 3500,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Cambriolage",
-        "fine": 2000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Diffamation",
-        "fine": 2000,
-        "duration_minutes": 5,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Délit de fuite",
-        "fine": 2500,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Dégradation de bien public",
-        "fine": 2000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Dégradation de bien privé",
-        "fine": 2500,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Discrimination",
-        "fine": 3000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Entrave à la circulation",
-        "fine": 4000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Entrave à une opération de police mineure",
-        "fine": 2000,
-        "duration_minutes": 5,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Exhibition d'armes",
-        "fine": 6000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Exhibition sexuelle à la vue d'autrui",
-        "fine": 3000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Harcèlement",
-        "fine": 5000,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Go-fast",
-        "fine": 3000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [
-            "Saisie des biens et du véhicule (fourrière)"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Menace de mort ou grave",
-        "fine": 10000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Menace mineure ou intimidation",
-        "fine": 2000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Menace / intimidation en ligne",
-        "fine": 3000,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Mise en danger de la vie d'autrui",
-        "fine": 4000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Non-assistance à personne en danger",
-        "fine": 5000,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Non présentation de documents officiels (carte d'identité, permis, ppa...)",
-        "fine": 2500,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Non présentation à une convocation de police",
-        "fine": 1500,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Outrage à agent",
-        "fine": 2500,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": [
-            "3 maximum"
-        ]
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Outrage Continus",
-        "fine": 5000,
-        "duration_minutes": 30,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": [
-            "UC si +60UP"
-        ]
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Intrusion dans une zone à accès restreint",
-        "fine": 2000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Piratage ATM",
-        "fine": 2800,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Plan mule",
-        "fine": 5000,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [
-            "Retrait du permis de conduire toutes catégories"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession d'un gilet pare-balles sans PPA professionnel",
-        "fine": 4500,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": [
-            "Si factice : Fouille + Saisie de la tenue + Pas de procédure"
-        ]
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession d'organe illégale",
-        "fine": 1000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession de Cannabis",
-        "fine": 100,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": [
-            "Jusqu'à 5g autorisés"
-        ]
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession de Cocaïne",
-        "fine": 150,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession de Méthamphétamine",
-        "fine": 200,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession de Crack",
-        "fine": 200,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession d'Ectasy",
-        "fine": 250,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession d'Opium",
-        "fine": 250,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession de Purple",
-        "fine": 110,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession de Salvia",
-        "fine": 120,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession de produit illégal",
-        "fine": 75,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": [
-            "Supérieur à 500 mettre un bracelet et rédiger un DA"
-        ]
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession de contrebande",
-        "fine": 100,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession d'accesoire illégal",
-        "fine": 100,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession d'arme de jet / de grenade",
-        "fine": 350,
-        "duration_minutes": 5,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession d'argent > 10.000$",
-        "fine": 0,
-        "duration_minutes": 0,
-        "immediate_seizures_or_restrictions": [
-            "Saisie de l'argent"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Possession de munition illégale",
-        "fine": 20,
-        "duration_minutes": 5,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": [
-            "Supérieur à 500 mettre un bracelet et rédiger un DA"
-        ]
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Refus d'obtempérer",
-        "fine": 3000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Regroupement non autorisé",
-        "fine": 3500,
-        "duration_minutes": 5,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Résistance à une arrestation",
-        "fine": 1500,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Transport de Drogue",
-        "fine": 3500,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Trouble à l'ordre public",
-        "fine": 5000,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": [
-            "Quantité x1 maximum"
-        ]
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Vente de drogue",
-        "fine": 1000,
-        "duration_minutes": 5,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Véhicule non-identifiable",
-        "fine": 3000,
-        "duration_minutes": 5,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Violation de domicile",
-        "fine": 2000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Vol de véhicule",
-        "fine": 2000,
-        "duration_minutes": 5,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Vol de véhicule de l'Etat",
-        "fine": 4000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Vol de biens",
-        "fine": 1500,
-        "duration_minutes": 5,
-        "immediate_seizures_or_restrictions": [
-            "Saisie des biens"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 2,
-        "category_name": "Délit mineur",
-        "offense": "Travail Fictif",
-        "fine": 8000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Achat/vente d'arme",
-        "fine": 20000,
-        "duration_minutes": 40,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Agression à l'arme blanche",
-        "fine": 5500,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Agression sur agent de l'État",
-        "fine": 8000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": [
-            "Quantité x1 maximum"
-        ]
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Agression sur civil",
-        "fine": 6500,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": [
-            "Quantité x1 maximum"
-        ]
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Association de malfaiteurs",
-        "fine": 10000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Blanchiment",
-        "fine": 10000,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [
-            "Saisie de l'argent"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Braquage d'armurerie",
-        "fine": 18000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Braquage à main armé sur citoyen",
-        "fine": 8000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": [
-            "Quantité x1 maximum"
-        ]
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Braquage à main armé sur agent dépositaire de l'autorité publique",
-        "fine": 10000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": [
-            "Quantité x1 maximum"
-        ]
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Braquage de la Banque Fleeca",
-        "fine": 30000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Braquage de la Banque Paleto",
-        "fine": 30000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Braquage de Bijouterie",
-        "fine": 20000,
-        "duration_minutes": 35,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Braquage de convoi d'arme/de drogue",
-        "fine": 15000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Braquage de convoi fédéral",
-        "fine": 20000,
-        "duration_minutes": 30,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Braquage de véhicule transporteur de fonds",
-        "fine": 20000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Braquage de la plateforme pétrolière",
-        "fine": 110000,
-        "duration_minutes": 50,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Destruction / dissimulation de preuve",
-        "fine": 8000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": [
-            "Quantité x1 maximum"
-        ]
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Diffusion de contenu illégal en ligne",
-        "fine": 8000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Collaboration avec un Etat / Organisation hostile",
-        "fine": 30000,
-        "duration_minutes": 45,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Entrave à une opération / enquête de police",
-        "fine": 8000,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Fabrication de stupéfiant",
-        "fine": 7000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Fabrication d'arme",
-        "fine": 15000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Intrusion illégale sur le territoire étatique",
-        "fine": 20000,
-        "duration_minutes": 30,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Mauvaise utilisation d'une arme à feu avec PPA",
-        "fine": 10000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": [
-            "Commets un délit majeur avec son arme"
-        ]
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Multirécidivisme",
-        "fine": 100000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate",
-            "UP en fédérale"
-        ],
-        "additional_notes": [
-            "Quantité x1 maximum"
-        ]
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Non présentation injustifiée à une convocation judiciaire",
-        "fine": 5000,
-        "duration_minutes": 30,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Obstruction à la justice",
-        "fine": 20000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Outrage à magistrat",
-        "fine": 15000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": [
-            "3 maximum"
-        ]
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Parjure",
-        "fine": 40000,
-        "duration_minutes": 30,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Possession d'arme blanche illégale sans PPA",
-        "fine": 5000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Possession / Usage de faux",
-        "fine": 15000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Possession d'arme de catégorie B (Pistolet céramique, Beretta, SNS, Glock 17) sans PPA",
-        "fine": 22000,
-        "duration_minutes": 15,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Possession d'arme de catégorie C (SMG, Tec-9, MP5K MK2, Assaut SMG, HKUMP)",
-        "fine": 50000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Prise d’otage sur Officier d’État ou agent dépositaire de l’autorité publique",
-        "fine": 15000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Prise d'otage sur civil",
-        "fine": 7500,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Tentative de Corruption",
-        "fine": 10000,
-        "duration_minutes": 10,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Tir sur civil",
-        "fine": 20000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": [
-            "Quantité x1 maximum"
-        ]
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Tir sur agent de l'état",
-        "fine": 30000,
-        "duration_minutes": 35,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Comparution immédiate"
-        ],
-        "additional_notes": [
-            "Quantité x1 maximum"
-        ]
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Usurpation de fonction",
-        "fine": 10000,
-        "duration_minutes": 30,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Usurpation d'identité",
-        "fine": 10000,
-        "duration_minutes": 25,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 3,
-        "category_name": "Délit majeur",
-        "offense": "Dégradaton par incendie ou explosion",
-        "fine": 40000,
-        "duration_minutes": 30,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Rapport d'arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Abus de confiance",
-        "fine": 45000,
-        "duration_minutes": 40,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Atteinte à l'intégrité physique",
-        "fine": 20000,
-        "duration_minutes": 20,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Atteinte à la sécurité intérieure",
-        "fine": 300000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Braquage du casino",
-        "fine": 150000,
-        "duration_minutes": 50,
-        "immediate_seizures_or_restrictions": [
-            "Saisie des biens"
-        ],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Braquage de la Pacific Standard",
-        "fine": 100000,
-        "duration_minutes": 40,
-        "immediate_seizures_or_restrictions": [
-            "Saisie des biens"
-        ],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Braquage du Humane Labs",
-        "fine": 120000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [
-            "Saisie des biens"
-        ],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Cavale",
-        "fine": 300000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Détention provisoire"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Corruption",
-        "fine": 100000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Détournement de fonds",
-        "fine": 60000,
-        "duration_minutes": 40,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Organisation d'évasion",
-        "fine": 150000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Extorsion de fonds",
-        "fine": 75000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Fabrication de faux",
-        "fine": 50000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Fraude fiscale",
-        "fine": 50000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [
-            "Saisie des biens",
-            "Gel des comptes"
-        ],
-        "other_immediate_penalties": [],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Kidnapping / Séquestration",
-        "fine": 60000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Possession d'arme de catégorie D (AK-47, AK-U, Thompson, SG 552)",
-        "fine": 80000,
-        "duration_minutes": 50,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Possession d'arme de catégorie D (Canon Scié, Fusil à pompe de tout type)",
-        "fine": 80000,
-        "duration_minutes": 50,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": [
-            "si Juge présent -> CI"
-        ]
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Prise d’otage sur Commissaire d’Etat",
-        "fine": 100000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Meurtre sur civil",
-        "fine": 100000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Meurtre sur agent de l'état",
-        "fine": 100000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Tentative de meurtre sur agent de l'état (acte prémédité)",
-        "fine": 75000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Tentative de meurtre sur civil (acte prémédité)",
-        "fine": 75000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Terrorisme",
-        "fine": 250000,
-        "duration_minutes": 30,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Détention provisoire"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Trafic d'armes",
-        "fine": 150000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Trafic de drogue",
-        "fine": 50000,
-        "duration_minutes": 60,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Trafic d'organes",
-        "fine": 50000,
-        "duration_minutes": 90,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    },
-    {
-        "category_id": 4,
-        "category_name": "Crime",
-        "offense": "Violation de secret professionnel / Droit de réserve",
-        "fine": 80000,
-        "duration_minutes": 30,
-        "immediate_seizures_or_restrictions": [],
-        "other_immediate_penalties": [
-            "Bracelet électronique"
-        ],
-        "legal_procedures": [
-            "Dossier d'Arrestation"
-        ],
-        "additional_notes": []
-    }
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Appel inutile aux services publics",
+		"fine": 500,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Conduite dangereuse",
+		"fine": 800,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": [
+			"Retrait du permis de la catégorie du véhicule"
+		],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Conduite sans permis",
+		"fine": 1500,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": [
+			"Saisie temporaire du véhicule (fourrière)"
+		],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Excès de vitesse",
+		"fine": 800,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Injure",
+		"fine": 1000,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Stationnement gênant/interdit",
+		"fine": 800,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": [
+			"Saisie temporaire du véhicule (fourrière)"
+		],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Véhicule non en état",
+		"fine": 500,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": [
+			"Saisie temporaire du véhicule (fourrière)"
+		],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Dissimulation du visage",
+		"fine": 1500,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": [
+			"Retrait de l'élément dissimulant par l'individu"
+		],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Holster visible",
+		"fine": 600,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": ["Retrait du holster par l'individu"],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Ivresse sur la voie publique",
+		"fine": 500,
+		"duration_minutes": 5,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Dégrisement"],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 1,
+		"category_name": "Contravention",
+		"offense": "Utilisation abusive de l'avertisseur sonore",
+		"fine": 500,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": [
+			"Saisie temporaire du véhicule (fourrière)"
+		],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Braconnage / Chasse / Pêche illégale",
+		"fine": 2500,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Braquage LTD",
+		"fine": 3500,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Cambriolage",
+		"fine": 2000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Diffamation",
+		"fine": 2000,
+		"duration_minutes": 5,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Délit de fuite",
+		"fine": 2500,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Dégradation de bien public",
+		"fine": 2000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Dégradation de bien privé",
+		"fine": 2500,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Discrimination",
+		"fine": 3000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Entrave à la circulation",
+		"fine": 4000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Entrave à une opération de police mineure",
+		"fine": 2000,
+		"duration_minutes": 5,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Exhibition d'armes",
+		"fine": 6000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Exhibition sexuelle à la vue d'autrui",
+		"fine": 3000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Harcèlement",
+		"fine": 5000,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Go-fast",
+		"fine": 3000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [
+			"Saisie des biens et du véhicule (fourrière)"
+		],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Menace de mort ou grave",
+		"fine": 10000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Menace mineure ou intimidation",
+		"fine": 2000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Menace / intimidation en ligne",
+		"fine": 3000,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Mise en danger de la vie d'autrui",
+		"fine": 4000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Non-assistance à personne en danger",
+		"fine": 5000,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Non présentation de documents officiels (carte d'identité, permis, ppa...)",
+		"fine": 2500,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Non présentation à une convocation de police",
+		"fine": 1500,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Outrage à agent",
+		"fine": 2500,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": ["3 maximum"]
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Outrage Continus",
+		"fine": 5000,
+		"duration_minutes": 30,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": ["UC si +60UP"]
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Intrusion dans une zone à accès restreint",
+		"fine": 2000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Piratage ATM",
+		"fine": 2800,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Plan mule",
+		"fine": 5000,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [
+			"Retrait du permis de conduire toutes catégories"
+		],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession d'un gilet pare-balles sans PPA professionnel",
+		"fine": 4500,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": [
+			"Si factice : Fouille + Saisie de la tenue + Pas de procédure"
+		]
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession d'organe illégale",
+		"fine": 1000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession de Cannabis",
+		"fine": 100,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": ["Jusqu'à 5g autorisés"]
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession de Cocaïne",
+		"fine": 150,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession de Méthamphétamine",
+		"fine": 200,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession de Crack",
+		"fine": 200,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession d'Ectasy",
+		"fine": 250,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession d'Opium",
+		"fine": 250,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession de Purple",
+		"fine": 110,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession de Salvia",
+		"fine": 120,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession de produit illégal",
+		"fine": 75,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": ["Supérieur à 500 mettre un bracelet et rédiger un DA"]
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession de contrebande",
+		"fine": 100,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession d'accesoire illégal",
+		"fine": 100,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession d'arme de jet / de grenade",
+		"fine": 350,
+		"duration_minutes": 5,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession d'argent > 10.000$",
+		"fine": 0,
+		"duration_minutes": 0,
+		"immediate_seizures_or_restrictions": ["Saisie de l'argent"],
+		"other_immediate_penalties": [],
+		"legal_procedures": [],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Possession de munition illégale",
+		"fine": 20,
+		"duration_minutes": 5,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": ["Supérieur à 500 mettre un bracelet et rédiger un DA"]
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Refus d'obtempérer",
+		"fine": 3000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Regroupement non autorisé",
+		"fine": 3500,
+		"duration_minutes": 5,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Résistance à une arrestation",
+		"fine": 1500,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Transport de Drogue",
+		"fine": 3500,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Trouble à l'ordre public",
+		"fine": 5000,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": ["Quantité x1 maximum"]
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Vente de drogue",
+		"fine": 1000,
+		"duration_minutes": 5,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Véhicule non-identifiable",
+		"fine": 3000,
+		"duration_minutes": 5,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Violation de domicile",
+		"fine": 2000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Vol de véhicule",
+		"fine": 2000,
+		"duration_minutes": 5,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Vol de véhicule de l'Etat",
+		"fine": 4000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Vol de biens",
+		"fine": 1500,
+		"duration_minutes": 5,
+		"immediate_seizures_or_restrictions": ["Saisie des biens"],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 2,
+		"category_name": "Délit mineur",
+		"offense": "Travail Fictif",
+		"fine": 8000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Achat/vente d'arme",
+		"fine": 20000,
+		"duration_minutes": 40,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Agression à l'arme blanche",
+		"fine": 5500,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Agression sur agent de l'État",
+		"fine": 8000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": ["Quantité x1 maximum"]
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Agression sur civil",
+		"fine": 6500,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": ["Quantité x1 maximum"]
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Association de malfaiteurs",
+		"fine": 10000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Blanchiment",
+		"fine": 10000,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": ["Saisie de l'argent"],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Braquage d'armurerie",
+		"fine": 18000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Braquage à main armé sur citoyen",
+		"fine": 8000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": ["Quantité x1 maximum"]
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Braquage à main armé sur agent dépositaire de l'autorité publique",
+		"fine": 10000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": ["Quantité x1 maximum"]
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Braquage de la Banque Fleeca",
+		"fine": 30000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Braquage de la Banque Paleto",
+		"fine": 30000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Braquage de Bijouterie",
+		"fine": 20000,
+		"duration_minutes": 35,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Braquage de convoi d'arme/de drogue",
+		"fine": 15000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Braquage de convoi fédéral",
+		"fine": 20000,
+		"duration_minutes": 30,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Braquage de véhicule transporteur de fonds",
+		"fine": 20000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Braquage de la plateforme pétrolière",
+		"fine": 110000,
+		"duration_minutes": 50,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Destruction / dissimulation de preuve",
+		"fine": 8000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": ["Quantité x1 maximum"]
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Diffusion de contenu illégal en ligne",
+		"fine": 8000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Collaboration avec un Etat / Organisation hostile",
+		"fine": 30000,
+		"duration_minutes": 45,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Entrave à une opération / enquête de police",
+		"fine": 8000,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Fabrication de stupéfiant",
+		"fine": 7000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Fabrication d'arme",
+		"fine": 15000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Intrusion illégale sur le territoire étatique",
+		"fine": 20000,
+		"duration_minutes": 30,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Mauvaise utilisation d'une arme à feu avec PPA",
+		"fine": 10000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": ["Commets un délit majeur avec son arme"]
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Multirécidivisme",
+		"fine": 100000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate", "UP en fédérale"],
+		"additional_notes": ["Quantité x1 maximum"]
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Non présentation injustifiée à une convocation judiciaire",
+		"fine": 5000,
+		"duration_minutes": 30,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Obstruction à la justice",
+		"fine": 20000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Outrage à magistrat",
+		"fine": 15000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": ["3 maximum"]
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Parjure",
+		"fine": 40000,
+		"duration_minutes": 30,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Possession d'arme blanche illégale sans PPA",
+		"fine": 5000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Possession / Usage de faux",
+		"fine": 15000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Possession d'arme de catégorie B (Pistolet céramique, Beretta, SNS, Glock 17) sans PPA",
+		"fine": 22000,
+		"duration_minutes": 15,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Possession d'arme de catégorie C (SMG, Tec-9, MP5K MK2, Assaut SMG, HKUMP)",
+		"fine": 50000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Prise d’otage sur Officier d’État ou agent dépositaire de l’autorité publique",
+		"fine": 15000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Prise d'otage sur civil",
+		"fine": 7500,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Tentative de Corruption",
+		"fine": 10000,
+		"duration_minutes": 10,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Tir sur civil",
+		"fine": 20000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": ["Quantité x1 maximum"]
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Tir sur agent de l'état",
+		"fine": 30000,
+		"duration_minutes": 35,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Comparution immédiate"],
+		"additional_notes": ["Quantité x1 maximum"]
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Usurpation de fonction",
+		"fine": 10000,
+		"duration_minutes": 30,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Usurpation d'identité",
+		"fine": 10000,
+		"duration_minutes": 25,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 3,
+		"category_name": "Délit majeur",
+		"offense": "Dégradaton par incendie ou explosion",
+		"fine": 40000,
+		"duration_minutes": 30,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Rapport d'arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Abus de confiance",
+		"fine": 45000,
+		"duration_minutes": 40,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Atteinte à l'intégrité physique",
+		"fine": 20000,
+		"duration_minutes": 20,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Atteinte à la sécurité intérieure",
+		"fine": 300000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Braquage du casino",
+		"fine": 150000,
+		"duration_minutes": 50,
+		"immediate_seizures_or_restrictions": ["Saisie des biens"],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Braquage de la Pacific Standard",
+		"fine": 100000,
+		"duration_minutes": 40,
+		"immediate_seizures_or_restrictions": ["Saisie des biens"],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Braquage du Humane Labs",
+		"fine": 120000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": ["Saisie des biens"],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Cavale",
+		"fine": 300000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Détention provisoire"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Corruption",
+		"fine": 100000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Détournement de fonds",
+		"fine": 60000,
+		"duration_minutes": 40,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Organisation d'évasion",
+		"fine": 150000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Extorsion de fonds",
+		"fine": 75000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Fabrication de faux",
+		"fine": 50000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Fraude fiscale",
+		"fine": 50000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [
+			"Saisie des biens",
+			"Gel des comptes"
+		],
+		"other_immediate_penalties": [],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Kidnapping / Séquestration",
+		"fine": 60000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Possession d'arme de catégorie D (AK-47, AK-U, Thompson, SG 552)",
+		"fine": 80000,
+		"duration_minutes": 50,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Possession d'arme de catégorie D (Canon Scié, Fusil à pompe de tout type)",
+		"fine": 80000,
+		"duration_minutes": 50,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": ["si Juge présent -> CI"]
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Prise d’otage sur Commissaire d’Etat",
+		"fine": 100000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Meurtre sur civil",
+		"fine": 100000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Meurtre sur agent de l'état",
+		"fine": 100000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Tentative de meurtre sur agent de l'état (acte prémédité)",
+		"fine": 75000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Tentative de meurtre sur civil (acte prémédité)",
+		"fine": 75000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Terrorisme",
+		"fine": 250000,
+		"duration_minutes": 30,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Détention provisoire"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Trafic d'armes",
+		"fine": 150000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Trafic de drogue",
+		"fine": 50000,
+		"duration_minutes": 60,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Trafic d'organes",
+		"fine": 50000,
+		"duration_minutes": 90,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	},
+	{
+		"category_id": 4,
+		"category_name": "Crime",
+		"offense": "Violation de secret professionnel / Droit de réserve",
+		"fine": 80000,
+		"duration_minutes": 30,
+		"immediate_seizures_or_restrictions": [],
+		"other_immediate_penalties": ["Bracelet électronique"],
+		"legal_procedures": ["Dossier d'Arrestation"],
+		"additional_notes": []
+	}
 ]

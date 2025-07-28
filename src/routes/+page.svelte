@@ -1,39 +1,45 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-    import type { Offense, SelectedOffense, CalculationResult } from '$lib/types';
-    import { loadOffenses, calculateResults } from '$lib/offenses';
-    import OffenseSelector from '$lib/components/OffenseSelector.svelte';
-    import CalculationResults from '$lib/components/CalculationResults.svelte';
-    import TemplateManager from '$lib/components/TemplateManager.svelte';
+import { onMount } from "svelte";
+import CalculationResults from "$lib/components/CalculationResults.svelte";
+import OffenseSelector from "$lib/components/OffenseSelector.svelte";
+import TemplateManager from "$lib/components/TemplateManager.svelte";
+import { calculateResults, loadOffenses } from "$lib/offenses";
+import type { CalculationResult, Offense, SelectedOffense } from "$lib/types";
 
-    let offenses: Offense[] = [];
-    let selectedOffenses: SelectedOffense[] = [];
-    let searchTerm = '';
-    let loading = true;
-    let error = '';
-    let activeTab = 'calculator'; // 'calculator' ou 'templates'
+let offenses = $state<Offense[]>([]);
+let selectedOffenses = $state<SelectedOffense[]>([]);
+let searchTerm = $state("");
+let loading = $state(true);
+let error = $state("");
+let activeTab = $state<"calculator" | "templates">("calculator");
 
-    onMount(async () => {
-        try {
-            offenses = await loadOffenses();
-        } catch (err) {
-            error = 'Erreur lors du chargement des infractions';
-            console.error(err);
-        } finally {
-            loading = false;
-        }
-    });
+let calculationResult = $derived(
+	selectedOffenses.length > 0 ? calculateResults(selectedOffenses) : null,
+);
 
-    $: calculationResult = selectedOffenses.length > 0 ? calculateResults(selectedOffenses) : null;
+onMount(async () => {
+	try {
+		offenses = await loadOffenses();
+	} catch (err) {
+		error = "Erreur lors du chargement des infractions";
+		console.error(err);
+	} finally {
+		loading = false;
+	}
+});
 
-    function clearAll() {
-        selectedOffenses = [];
-    }
+function clearAll() {
+	selectedOffenses = [];
+}
 
-    function handleTemplateLoad(event: CustomEvent<{ offenses: SelectedOffense[] }>) {
-        selectedOffenses = event.detail.offenses;
-        activeTab = 'calculator'; // Retourner à l'onglet calculateur
-    }
+function handleTemplateLoad(offenses: SelectedOffense[]) {
+	selectedOffenses = offenses;
+	activeTab = "calculator"; // Retourner à l'onglet calculateur
+}
+
+function setActiveTab(tab: "calculator" | "templates") {
+	activeTab = tab;
+}
 </script>
 
 <svelte:head>
@@ -52,7 +58,7 @@
                 </div>
                 {#if selectedOffenses.length > 0 && activeTab === 'calculator'}
                     <button
-                        on:click={clearAll}
+                        onclick={clearAll}
                         class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
                     >
                         Effacer tout
@@ -67,13 +73,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <nav class="flex space-x-8">
                 <button
-                    on:click={() => activeTab = 'calculator'}
+                    onclick={() => setActiveTab('calculator')}
                     class="py-4 px-1 border-b-2 font-medium text-sm {activeTab === 'calculator' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}"
                 >
                     Calculateur
                 </button>
                 <button
-                    on:click={() => activeTab = 'templates'}
+                    onclick={() => setActiveTab('templates')}
                     class="py-4 px-1 border-b-2 font-medium text-sm {activeTab === 'templates' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}"
                 >
                     Templates
@@ -140,7 +146,7 @@
                 <div class="max-w-4xl mx-auto">
                     <TemplateManager 
                         {selectedOffenses}
-                        on:loadTemplate={handleTemplateLoad}
+                        onLoadTemplate={handleTemplateLoad}
                     />
                 </div>
             {/if}

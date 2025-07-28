@@ -2,7 +2,9 @@
     import type { CalculationResult } from '../types';
     import { formatCurrency, formatDuration } from '../offenses';
 
-    export let result: CalculationResult;
+    let { result }: {
+        result: CalculationResult;
+    } = $props();
 </script>
 
 <div class="space-y-6">

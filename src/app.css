@@ -2,16 +2,16 @@
 
 /* Styles personnalisés pour l'application */
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 /* Amélioration de l'accessibilité pour les focus */
 *:focus {
-    outline: 2px solid #3b82f6;
-    outline-offset: 2px;
+	outline: 2px solid #3b82f6;
+	outline-offset: 2px;
 }
 
 /* Animation pour les transitions */
 .transition-all {
-    transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }

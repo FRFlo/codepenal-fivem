@@ -1,0 +1,49 @@
+---
+alwaysApply: true
+---
+### Directives:
+
+1.  **Language of Prose (French):**
+    -   All descriptive text, explanations, headings, list items, and any non-code
+        content should be written in French.
+    -   Example: "Bienvenue sur notre documentation."
+    -   Example: "Voici un exemple de code:"
+
+2.  **Language of Code (US English):**
+    -   All programming language keywords, variable names, function names, class
+        names, file paths, command-line instructions, and any text directly
+        part of a code block or inline code snippet must be in US English.
+    -   Comments *within* code blocks should also be in US English.
+    -   Example: `let userName = "John";`
+    -   Example: `function calculateTotal(price, quantity) { /* This function calculates the total price */ return price * quantity; }`
+    -   Example: `console.log("Hello, World!");`
+    -   Example: `$ git commit -m "Add new feature"`
+
+3.  **Language of Comments and Docstrings (French):**
+    -   All comments *within* code blocks should be in French.
+    -   All function docstrings/JSDoc comments should be in French, describing
+        the function's purpose, parameters, and return values.
+    -   Example (inline comment): `// Cette variable stocke le nom de l'utilisateur`
+    -   Example (JSDoc):
+        ```javascript
+        /**
+         * Cette fonction calcule la somme de deux nombres.
+         * @param {number} value1 - Le premier nombre.
+         * @param {number} value2 - Le deuxième nombre.
+         * @returns {number} La somme des deux valeurs.
+         */
+        function addNumbers(value1, value2) {
+          // ...
+        }
+        ```
+
+4.  **Filenames and Paths:**
+    -   Filenames and paths referenced in the text should generally remain in
+        their original language (often US English for programming contexts).
+    -   Example: "Ouvrez le fichier `config.js`."
+
+5.  **Technical Terms:**
+    -   Technical terms that are commonly used in English in the programming
+        world (e.g., "API", "bug", "framework", "database") can be kept in
+        English, even in French prose, or have their French equivalent if widely
+        accepted (e.g., "base de données"). Consistency is key.
