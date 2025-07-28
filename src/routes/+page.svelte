@@ -4,12 +4,14 @@
     import { loadOffenses, calculateResults } from '$lib/offenses';
     import OffenseSelector from '$lib/components/OffenseSelector.svelte';
     import CalculationResults from '$lib/components/CalculationResults.svelte';
+    import TemplateManager from '$lib/components/TemplateManager.svelte';
 
     let offenses: Offense[] = [];
     let selectedOffenses: SelectedOffense[] = [];
     let searchTerm = '';
     let loading = true;
     let error = '';
+    let activeTab = 'calculator'; // 'calculator' ou 'templates'
 
     onMount(async () => {
         try {
@@ -27,6 +29,11 @@
     function clearAll() {
         selectedOffenses = [];
     }
+
+    function handleTemplateLoad(event: CustomEvent<{ offenses: SelectedOffense[] }>) {
+        selectedOffenses = event.detail.offenses;
+        activeTab = 'calculator'; // Retourner à l'onglet calculateur
+    }
 </script>
 
 <svelte:head>
@@ -43,7 +50,7 @@
                     <h1 class="text-3xl font-bold text-gray-900">Code Pénal LSPD</h1>
                     <p class="text-gray-600">Calculateur d'infractions et de peines</p>
                 </div>
-                {#if selectedOffenses.length > 0}
+                {#if selectedOffenses.length > 0 && activeTab === 'calculator'}
                     <button
                         on:click={clearAll}
                         class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
@@ -54,6 +61,26 @@
             </div>
         </div>
     </header>
+
+    <!-- Navigation des onglets -->
+    <div class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex space-x-8">
+                <button
+                    on:click={() => activeTab = 'calculator'}
+                    class="py-4 px-1 border-b-2 font-medium text-sm {activeTab === 'calculator' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}"
+                >
+                    Calculateur
+                </button>
+                <button
+                    on:click={() => activeTab = 'templates'}
+                    class="py-4 px-1 border-b-2 font-medium text-sm {activeTab === 'templates' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}"
+                >
+                    Templates
+                </button>
+            </nav>
+        </div>
+    </div>
 
     <!-- Main content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -81,33 +108,42 @@
                 </div>
             </div>
         {:else}
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Sélecteur d'infractions -->
-                <div>
-                    <OffenseSelector
-                        {offenses}
-                        bind:selectedOffenses
-                        bind:searchTerm
+            {#if activeTab === 'calculator'}
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Sélecteur d'infractions -->
+                    <div>
+                        <OffenseSelector
+                            {offenses}
+                            bind:selectedOffenses
+                            bind:searchTerm
+                        />
+                    </div>
+
+                    <!-- Résultats -->
+                    <div>
+                        {#if calculationResult}
+                            <CalculationResults result={calculationResult} />
+                        {:else}
+                            <div class="bg-white rounded-lg shadow p-8 text-center">
+                                <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                                <h3 class="mt-2 text-sm font-medium text-gray-900">Aucune infraction sélectionnée</h3>
+                                <p class="mt-1 text-sm text-gray-500">
+                                    Commencez par sélectionner des infractions pour voir les résultats.
+                                </p>
+                            </div>
+                        {/if}
+                    </div>
+                </div>
+            {:else if activeTab === 'templates'}
+                <div class="max-w-4xl mx-auto">
+                    <TemplateManager 
+                        {selectedOffenses}
+                        on:loadTemplate={handleTemplateLoad}
                     />
                 </div>
-
-                <!-- Résultats -->
-                <div>
-                    {#if calculationResult}
-                        <CalculationResults result={calculationResult} />
-                    {:else}
-                        <div class="bg-white rounded-lg shadow p-8 text-center">
-                            <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                            <h3 class="mt-2 text-sm font-medium text-gray-900">Aucune infraction sélectionnée</h3>
-                            <p class="mt-1 text-sm text-gray-500">
-                                Commencez par sélectionner des infractions pour voir les résultats.
-                            </p>
-                        </div>
-                    {/if}
-                </div>
-            </div>
+            {/if}
         {/if}
     </main>
 

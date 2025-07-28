@@ -22,4 +22,13 @@ export interface CalculationResult {
     allProcedures: string[];
     allNotes: string[];
     offensesByCategory: Record<string, SelectedOffense[]>;
+}
+
+export interface Template {
+    id: string;
+    name: string;
+    description: string;
+    offenses: SelectedOffense[];
+    createdAt: number;
+    lastUsed?: number;
 } 
