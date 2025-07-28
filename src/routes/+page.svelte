@@ -74,8 +74,8 @@ function setActiveTab(tab: "calculator" | "templates") {
 </script>
 
 <svelte:head>
-    <title>Code Pénal LSPD - Calculateur d'infractions</title>
-    <meta name="description" content="Calculateur d'infractions et de peines pour les joueurs LSPD" />
+    <title>Code Pénal SASP - Calculateur d'infractions</title>
+    <meta name="description" content="Calculateur d'infractions et de peines pour les joueurs SASP" />
 </svelte:head>
 
 <div class="min-h-screen bg-gray-50">
@@ -84,7 +84,7 @@ function setActiveTab(tab: "calculator" | "templates") {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-6">
                 <div>
-                    <h1 class="text-3xl font-bold text-gray-900">Code Pénal LSPD</h1>
+                    <h1 class="text-3xl font-bold text-gray-900">Code Pénal SASP</h1>
                     <p class="text-gray-600">Calculateur d'infractions et de peines</p>
                 </div>
                 {#if selectedOffenses.length > 0 && activeTab === 'calculator'}
@@ -188,7 +188,7 @@ function setActiveTab(tab: "calculator" | "templates") {
     <footer class="bg-white border-t border-gray-200 mt-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div class="text-center text-sm text-gray-500">
-                <p>Calculateur d'infractions LSPD - Basé sur le code pénal officiel</p>
+                <p>Calculateur d'infractions SASP - Basé sur le code pénal officiel</p>
                 <p class="mt-1">Utilisez cet outil pour calculer rapidement les peines et procédures requises</p>
             </div>
         </div>
