@@ -4,10 +4,10 @@
     import { loadTemplates, createTemplate, deleteTemplate, markTemplateAsUsed, formatDate, exportTemplateToUrl, importTemplateFromUrl, clearTemplateFromUrl, hasTemplateInUrl, renameTemplate } from '../templates';
     import { formatCurrency } from '../offenses';
 
-    let { selectedOffenses, onLoadTemplate } = $props<{
+    let { selectedOffenses, onLoadTemplate }: {
         selectedOffenses: SelectedOffense[];
         onLoadTemplate: (offenses: SelectedOffense[]) => void;
-    }>();
+    } = $props();
 
     let templates = $state<Template[]>([]);
     let showSaveDialog = $state(false);
@@ -148,11 +148,11 @@
 <div class="space-y-4">
     <!-- Bouton pour sauvegarder le template actuel -->
     <div class="flex justify-between items-center">
-        <h3 class="text-lg font-medium text-gray-900">Templates sauvegardés</h3>
+        <h3 class="text-lg font-medium text-gray-900 dark:text-white">Templates sauvegardés</h3>
         <button
             onclick={openSaveDialog}
             disabled={selectedOffenses.length === 0}
-            class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
             Sauvegarder le template actuel
         </button>
@@ -160,30 +160,30 @@
 
     <!-- Liste des templates -->
     {#if templates.length === 0}
-        <div class="bg-gray-50 rounded-lg p-6 text-center">
-            <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 text-center">
+            <svg class="mx-auto h-12 w-12 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
-            <h3 class="mt-2 text-sm font-medium text-gray-900">Aucun template sauvegardé</h3>
-            <p class="mt-1 text-sm text-gray-500">
+            <h3 class="mt-2 text-sm font-medium text-gray-900 dark:text-white">Aucun template sauvegardé</h3>
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
                 Sauvegardez des configurations fréquentes pour les réutiliser rapidement.
             </p>
         </div>
     {:else}
         <div class="grid gap-4">
             {#each templates as template}
-                <div class="bg-white rounded-lg shadow border border-gray-200">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow border border-gray-200 dark:border-gray-700">
                     <div class="p-4">
                         <div class="flex justify-between items-start">
                             <div class="flex-1">
-                                <h4 class="font-medium text-gray-900">{template.name}</h4>
+                                <h4 class="font-medium text-gray-900 dark:text-white">{template.name}</h4>
                                 {#if template.description}
-                                    <p class="text-sm text-gray-600 mt-1">{template.description}</p>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">{template.description}</p>
                                 {/if}
-                                <p class="text-sm text-gray-500 mt-2">
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
                                     {getTemplateSummary(template.offenses)}
                                 </p>
-                                <div class="flex items-center space-x-4 mt-2 text-xs text-gray-400">
+                                <div class="flex items-center space-x-4 mt-2 text-xs text-gray-400 dark:text-gray-500">
                                     <span>Créé le {formatDate(template.createdAt)}</span>
                                     {#if template.lastUsed}
                                         <span>Utilisé le {formatDate(template.lastUsed)}</span>
@@ -193,25 +193,25 @@
                             <div class="flex items-center space-x-2 ml-4">
                                 <button
                                     onclick={() => loadTemplate(template)}
-                                    class="px-3 py-1 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    class="px-3 py-1 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
                                 >
                                     Charger
                                 </button>
                                 <button
                                     onclick={() => openRenameDialog(template)}
-                                    class="px-3 py-1 bg-yellow-600 text-white text-sm rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                    class="px-3 py-1 bg-yellow-600 text-white text-sm rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors"
                                 >
                                     Renommer
                                 </button>
                                 <button
                                     onclick={() => openShareDialog(template)}
-                                    class="px-3 py-1 bg-purple-600 text-white text-sm rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                    class="px-3 py-1 bg-purple-600 text-white text-sm rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors"
                                 >
                                     Partager
                                 </button>
                                 <button
                                     onclick={() => confirmDelete(template)}
-                                    class="px-3 py-1 bg-red-600 text-white text-sm rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                                    class="px-3 py-1 bg-red-600 text-white text-sm rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors"
                                 >
                                     Supprimer
                                 </button>
@@ -227,12 +227,12 @@
 <!-- Modal de sauvegarde -->
 {#if showSaveDialog}
     <div class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
-        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white dark:bg-gray-800 dark:border-gray-700">
             <div class="mt-3">
-                <h3 class="text-lg font-medium text-gray-900 mb-4">Sauvegarder le template</h3>
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-4">Sauvegarder le template</h3>
                 <div class="space-y-4">
                     <div>
-                        <label for="template-name" class="block text-sm font-medium text-gray-700 mb-1">
+                        <label for="template-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                             Nom du template *
                         </label>
                         <input
@@ -240,11 +240,11 @@
                             type="text"
                             bind:value={templateName}
                             placeholder="Ex: Infractions routières courantes"
-                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                         />
                     </div>
                     <div>
-                        <label for="template-description" class="block text-sm font-medium text-gray-700 mb-1">
+                        <label for="template-description" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                             Description (optionnel)
                         </label>
                         <textarea
@@ -252,24 +252,24 @@
                             bind:value={templateDescription}
                             placeholder="Description du template..."
                             rows="3"
-                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                         ></textarea>
                     </div>
-                    <div class="text-sm text-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">
                         <p>Ce template contient {selectedOffenses.length} infraction{selectedOffenses.length > 1 ? 's' : ''}.</p>
                     </div>
                 </div>
                 <div class="flex justify-end space-x-3 mt-6">
                     <button
                         onclick={() => showSaveDialog = false}
-                        class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                        class="px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-400 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-colors"
                     >
                         Annuler
                     </button>
                     <button
                         onclick={saveTemplate}
                         disabled={!templateName.trim()}
-                        class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     >
                         Sauvegarder
                     </button>
@@ -282,12 +282,12 @@
 <!-- Modal de partage -->
 {#if showShareDialog}
     <div class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
-        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white dark:bg-gray-800 dark:border-gray-700">
             <div class="mt-3">
-                <h3 class="text-lg font-medium text-gray-900 mb-4">Partager le template</h3>
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-4">Partager le template</h3>
                 <div class="space-y-4">
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                             URL de partage
                         </label>
                         <div class="flex">
@@ -295,24 +295,24 @@
                                 type="text"
                                 value={shareUrl}
                                 readonly
-                                class="flex-1 px-3 py-2 border border-gray-300 rounded-l-md bg-gray-50 text-gray-600"
+                                class="flex-1 px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-l-md bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-400"
                             />
                             <button
                                 onclick={copyShareUrl}
-                                class="px-4 py-2 bg-purple-600 text-white rounded-r-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                class="px-4 py-2 bg-purple-600 text-white rounded-r-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors"
                             >
                                 Copier
                             </button>
                         </div>
                     </div>
-                    <div class="text-sm text-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">
                         <p>Partagez cette URL avec d'autres officiers pour qu'ils puissent importer ce template.</p>
                     </div>
                 </div>
                 <div class="flex justify-end mt-6">
                     <button
                         onclick={() => showShareDialog = false}
-                        class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                        class="px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-400 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-colors"
                     >
                         Fermer
                     </button>
@@ -337,33 +337,33 @@
 <!-- Modal d'import -->
 {#if showImportDialog}
     <div class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
-        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white dark:bg-gray-800 dark:border-gray-700">
             <div class="mt-3">
-                <h3 class="text-lg font-medium text-gray-900 mb-4">Importer un template</h3>
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-4">Importer un template</h3>
                 <div class="space-y-4">
-                    <div class="bg-blue-50 border border-blue-200 rounded-md p-4">
-                        <h4 class="font-medium text-blue-900">{importData?.name}</h4>
+                    <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-md p-4">
+                        <h4 class="font-medium text-blue-900 dark:text-blue-100">{importData?.name}</h4>
                         {#if importData?.description}
-                            <p class="text-sm text-blue-700 mt-1">{importData.description}</p>
+                            <p class="text-sm text-blue-700 dark:text-blue-300 mt-1">{importData.description}</p>
                         {/if}
-                        <p class="text-sm text-blue-600 mt-2">
+                        <p class="text-sm text-blue-600 dark:text-blue-400 mt-2">
                             {getTemplateSummary(importData?.offenses || [])}
                         </p>
                     </div>
-                    <div class="text-sm text-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">
                         <p>Voulez-vous importer ce template partagé ?</p>
                     </div>
                 </div>
                 <div class="flex justify-end space-x-3 mt-6">
                     <button
                         onclick={cancelImport}
-                        class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                        class="px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-400 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-colors"
                     >
                         Annuler
                     </button>
                     <button
                         onclick={confirmImport}
-                        class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
                     >
                         Importer
                     </button>
@@ -376,22 +376,22 @@
 <!-- Modal de confirmation de suppression -->
 {#if showDeleteConfirm}
     <div class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
-        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white dark:bg-gray-800 dark:border-gray-700">
             <div class="mt-3">
-                <h3 class="text-lg font-medium text-gray-900 mb-4">Confirmer la suppression</h3>
-                <p class="text-gray-600 mb-6">
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-4">Confirmer la suppression</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
                     Êtes-vous sûr de vouloir supprimer le template "{templateToDelete?.name}" ? Cette action est irréversible.
                 </p>
                 <div class="flex justify-end space-x-3">
                     <button
                         onclick={() => showDeleteConfirm = false}
-                        class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                        class="px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-400 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-colors"
                     >
                         Annuler
                     </button>
                     <button
                         onclick={deleteTemplateConfirmed}
-                        class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                        class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors"
                     >
                         Supprimer
                     </button>
@@ -404,12 +404,12 @@
 <!-- Modal de renommage -->
 {#if showRenameDialog}
     <div class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
-        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white dark:bg-gray-800 dark:border-gray-700">
             <div class="mt-3">
-                <h3 class="text-lg font-medium text-gray-900 mb-4">Renommer le template</h3>
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-4">Renommer le template</h3>
                 <div class="space-y-4">
                     <div>
-                        <label for="new-template-name" class="block text-sm font-medium text-gray-700 mb-1">
+                        <label for="new-template-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                             Nouveau nom du template *
                         </label>
                         <input
@@ -417,11 +417,11 @@
                             type="text"
                             bind:value={newTemplateName}
                             placeholder="Ex: Infractions routières courantes"
-                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                         />
                     </div>
                     <div>
-                        <label for="new-template-description" class="block text-sm font-medium text-gray-700 mb-1">
+                        <label for="new-template-description" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                             Nouvelle description (optionnel)
                         </label>
                         <textarea
@@ -429,21 +429,21 @@
                             bind:value={newTemplateDescription}
                             placeholder="Description du template..."
                             rows="3"
-                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                         ></textarea>
                     </div>
                 </div>
                 <div class="flex justify-end space-x-3 mt-6">
                     <button
                         onclick={cancelRename}
-                        class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                        class="px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-400 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-colors"
                     >
                         Annuler
                     </button>
                     <button
                         onclick={confirmRename}
                         disabled={!newTemplateName.trim()}
-                        class="px-4 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                        class="px-4 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     >
                         Renommer
                     </button>
