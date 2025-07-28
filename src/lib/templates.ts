@@ -88,6 +88,30 @@ export function markTemplateAsUsed(id: string): void {
 }
 
 /**
+ * Renomme un template existant
+ */
+export function renameTemplate(
+	id: string,
+	newName: string,
+	newDescription?: string,
+): Template | null {
+	const templates = loadTemplates();
+	const index = templates.findIndex((t) => t.id === id);
+
+	if (index === -1) return null;
+
+	const updates: Partial<Template> = { name: newName.trim() };
+	if (newDescription !== undefined) {
+		updates.description = newDescription.trim();
+	}
+
+	templates[index] = { ...templates[index], ...updates };
+	saveTemplates(templates);
+
+	return templates[index];
+}
+
+/**
  * Génère un ID unique
  */
 function generateId(): string {

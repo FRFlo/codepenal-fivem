@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import type { Template, SelectedOffense } from '../types';
-    import { loadTemplates, createTemplate, deleteTemplate, markTemplateAsUsed, formatDate, exportTemplateToUrl, importTemplateFromUrl, clearTemplateFromUrl, hasTemplateInUrl } from '../templates';
+    import { loadTemplates, createTemplate, deleteTemplate, markTemplateAsUsed, formatDate, exportTemplateToUrl, importTemplateFromUrl, clearTemplateFromUrl, hasTemplateInUrl, renameTemplate } from '../templates';
     import { formatCurrency } from '../offenses';
 
     let { selectedOffenses, onLoadTemplate } = $props<{
@@ -21,6 +21,10 @@
     let showImportDialog = $state(false);
     let importData = $state<{ name: string; description: string; offenses: SelectedOffense[] } | null>(null);
     let showCopyNotification = $state(false);
+    let showRenameDialog = $state(false);
+    let templateToRename = $state<Template | null>(null);
+    let newTemplateName = $state('');
+    let newTemplateDescription = $state('');
 
     // Charger les templates au montage
     let templatesLoaded = $derived(() => {
@@ -109,6 +113,31 @@
         importData = null;
     }
 
+    function openRenameDialog(template: Template) {
+        templateToRename = template;
+        newTemplateName = template.name;
+        newTemplateDescription = template.description || '';
+        showRenameDialog = true;
+    }
+
+    function confirmRename() {
+        if (templateToRename && newTemplateName.trim()) {
+            renameTemplate(templateToRename.id, newTemplateName.trim(), newTemplateDescription);
+            templates = loadTemplates();
+            templateToRename = null;
+            newTemplateName = '';
+            newTemplateDescription = '';
+        }
+        showRenameDialog = false;
+    }
+
+    function cancelRename() {
+        showRenameDialog = false;
+        templateToRename = null;
+        newTemplateName = '';
+        newTemplateDescription = '';
+    }
+
     function getTemplateSummary(offenses: SelectedOffense[]) {
         const totalFine = offenses.reduce((sum, o) => sum + (o.fine * o.quantity), 0);
         const totalDuration = offenses.reduce((sum, o) => sum + (o.duration_minutes * o.quantity), 0);
@@ -167,6 +196,12 @@
                                     class="px-3 py-1 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 >
                                     Charger
+                                </button>
+                                <button
+                                    onclick={() => openRenameDialog(template)}
+                                    class="px-3 py-1 bg-yellow-600 text-white text-sm rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                >
+                                    Renommer
                                 </button>
                                 <button
                                     onclick={() => openShareDialog(template)}
@@ -359,6 +394,58 @@
                         class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
                     >
                         Supprimer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+{/if}
+
+<!-- Modal de renommage -->
+{#if showRenameDialog}
+    <div class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+            <div class="mt-3">
+                <h3 class="text-lg font-medium text-gray-900 mb-4">Renommer le template</h3>
+                <div class="space-y-4">
+                    <div>
+                        <label for="new-template-name" class="block text-sm font-medium text-gray-700 mb-1">
+                            Nouveau nom du template *
+                        </label>
+                        <input
+                            id="new-template-name"
+                            type="text"
+                            bind:value={newTemplateName}
+                            placeholder="Ex: Infractions routières courantes"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                    </div>
+                    <div>
+                        <label for="new-template-description" class="block text-sm font-medium text-gray-700 mb-1">
+                            Nouvelle description (optionnel)
+                        </label>
+                        <textarea
+                            id="new-template-description"
+                            bind:value={newTemplateDescription}
+                            placeholder="Description du template..."
+                            rows="3"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        ></textarea>
+                    </div>
+                </div>
+                <div class="flex justify-end space-x-3 mt-6">
+                    <button
+                        onclick={cancelRename}
+                        class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                    >
+                        Annuler
+                    </button>
+                    <button
+                        onclick={confirmRename}
+                        disabled={!newTemplateName.trim()}
+                        class="px-4 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        Renommer
                     </button>
                 </div>
             </div>
